@@ -1,0 +1,67 @@
+{ 
+    "product": [
+        { 
+            "id": 1 ,
+            "img": "./ombor.img/barberton.png" ,
+            "title": "Barberton Daisy" ,
+            "price": "$119.00" ,
+            "count": "1" 
+        },
+           { 
+            "id": 2 ,
+            "img": "./ombor.img/angel wing .jpg" ,
+            "title": "Angel Wing Begonia" ,
+            "price": "$169.00" ,
+            "count": "1" 
+        },
+            { 
+            "id": 3 ,
+            "img": "./ombor.img/african violet.png" ,
+            "title": "African Violet" ,
+            "price": "$199.00" ,
+            "count": "1" 
+        },
+            { 
+            "id": 4 ,
+            "img": "./ombor.img/beach spider .png" ,
+            "title": "Beach Spider Lily" ,
+            "price": "$129.00" ,
+            "count": "1" 
+        },
+            { 
+            "id": 5 ,
+            "img": "./ombor.img/blushing.png" ,
+            "title": "Blushing Bromeliad" ,
+            "price": "$139.00" ,
+            "count": "1" 
+        },
+            { 
+            "id": 6 ,
+            "img": "./ombor.img/aluminum.png" ,
+            "title": "Aluminum Plant" ,
+            "price": "$179.00" ,
+            "count": "1" 
+        },
+            { 
+            "id": 7 ,
+            "img": "./ombor.img/bird's nest.png" ,
+            "title": "Bird's Nest Fern" ,
+            "price": "$99.00" ,
+            "count": "1" 
+        },
+            { 
+            "id": 8 ,
+            "img": "./ombor.img/broadleaf.jpg" ,
+            "title": "Broadleaf Lady Palm" ,
+            "price": "$59.00" ,
+            "count": "1" 
+        },
+          { 
+            "id": 9 ,
+            "img": "./ombor.img/chinese.png" ,
+            "title": "Chinese Evergreen" ,
+            "price": "$39.00" ,
+            "count": "1" 
+        }
+    ]
+}
