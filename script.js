@@ -30,7 +30,6 @@ const renderProducts = (data) => {
             <img class="cart-img" src="${product.img}" alt="${product.title}" />
             <h2 class="title">${product.title}</h2>
             <span class="price">${product.price}</span>
-            <!-- Tugmaga onclick hodisasi beramiz va unga mahsulotning indeksini uzatamiz -->
             <button class="cart-btn" onclick="addToBasket(${index})">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
@@ -57,9 +56,112 @@ getData();
 
 
 
+const fmain = document.querySelector(".main1")
+const smain = document.querySelector(".main2")
+
+const basketBtn = document.querySelector(".head-sv")
+
+fmain.style.display = "block"
+smain.style.display = "none"
+
+basketBtn.addEventListener("click", () => {
+
+    if (fmain.style.display == "block") {
+
+        fmain.style.display = "none"
+        smain.style.display = "block"
+
+    } else {
+
+        fmain.style.display = "block"
+        smain.style.display = "none"
+
+    }
+
+})
+
+
+
+
+const loginBtn = document.querySelector(".login")
+const loginPage = document.querySelector(".login-page")
+
+loginBtn.addEventListener("click", () => {
+
+    loginPage.style.display = "flex"
+
+})
+
+
+const closeBtn = document.querySelector(".close-btn")
+
+closeBtn.addEventListener("click", () => {
+
+    loginPage.style.display = "none"
+
+})
 
 
 
 
 
 
+
+
+const tbody = document.querySelector("tbody")
+
+let basket1 = JSON.parse(localStorage.getItem("myBasket")) || []
+
+function renderBasket(){
+
+    tbody.innerHTML = ""
+
+    basket1.forEach((item) => {
+
+        tbody.innerHTML += `
+
+        <tr>
+
+            <th scope="row" style="display:flex; align-items:center; gap:10px;">
+
+                <img src="${item.img}" th="70">
+
+                ${item.title}
+
+            </th>
+
+            <td>
+                $${item.price}
+            </td>
+
+            <td class="alo">
+                <div class="sanamoq">
+        <button class="plus">+</button><p class="sana">0</p>
+      <button class="minus">-</button>
+     </div>
+    </tr>
+            </td>
+
+            <td>
+                $${item.price}
+            </td>
+             <td><button class="delete"><img src="./icons/Delete.svg" alt=""></button></td>
+
+
+        </tr>
+
+        `
+
+    })
+
+}
+
+renderBasket()
+
+const plus = document.querySelector(".plus")
+const minus = document.querySelector(".minus")
+
+
+plus.addEventListener("click" , () => {
+    products.count + 1
+})
